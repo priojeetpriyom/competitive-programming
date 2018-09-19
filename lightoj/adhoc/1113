@@ -1,0 +1,69 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+stack <string> forwardd;
+stack <string> backward;
+string currentPage;
+void visit ()
+{
+    backward.push(currentPage);
+    cin>>currentPage;
+    cout<<currentPage<<endl;
+    while(!forwardd.empty())
+        forwardd.pop();
+}
+void frward()
+{
+    if(!forwardd.empty())
+    {
+        if(!forwardd.empty())
+        {
+            backward.push(currentPage);
+            currentPage=forwardd.top();
+            forwardd.pop();
+            cout<<currentPage<<endl;
+        }
+    }
+    else
+        printf("Ignored\n");
+}
+void bckward ()
+{
+    if(!backward.empty())
+    {
+        forwardd.push(currentPage);
+        currentPage=backward.top();
+        backward.pop();
+        cout<<currentPage<<endl;
+    }
+    else
+        printf("Ignored\n");
+}
+int main()
+{
+    //freopen("myOutput.txt","w",stdout);
+    char str[110];
+    int tCase;
+    scanf("%d",&tCase);
+    tCase++;
+    for(int i=1;i<tCase;i++)
+    {
+        printf("Case %d:\n",i);
+        while(!forwardd.empty())
+            forwardd.pop();
+        while(!backward.empty())
+            backward.pop();
+        currentPage="http://www.lightoj.com/";
+        while(scanf("\n%s",str)==1 && str[0] !='Q')
+        {
+            khali=true;
+            if(str[0]=='V')
+                visit();
+            else if(str[0]=='B')
+                bckward();
+            else if(str[0]=='F')
+                frward();
+        }
+    }
+    return 0;
+}

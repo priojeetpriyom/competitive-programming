@@ -1,0 +1,15 @@
+/tmp/ccu7UWCV.o: In function `valid(cell, cell)':
+temp.cpp:(.text+0x1c): relocation truncated to fit: R_X86_64_PC32 against symbol `n' defined in .bss section in /tmp/ccu7UWCV.o
+temp.cpp:(.text+0x30): relocation truncated to fit: R_X86_64_PC32 against symbol `m' defined in .bss section in /tmp/ccu7UWCV.o
+temp.cpp:(.text+0x72): relocation truncated to fit: R_X86_64_32S against symbol `dist' defined in .bss section in /tmp/ccu7UWCV.o
+temp.cpp:(.text+0x91): relocation truncated to fit: R_X86_64_32S against symbol `dist' defined in .bss section in /tmp/ccu7UWCV.o
+/tmp/ccu7UWCV.o: In function `bfs(cell)':
+temp.cpp:(.text+0x191): relocation truncated to fit: R_X86_64_32S against symbol `dist' defined in .bss section in /tmp/ccu7UWCV.o
+temp.cpp:(.text+0x1b0): relocation truncated to fit: R_X86_64_32S against symbol `dist' defined in .bss section in /tmp/ccu7UWCV.o
+/tmp/ccu7UWCV.o: In function `main':
+temp.cpp:(.text+0x241): relocation truncated to fit: R_X86_64_32 against symbol `m' defined in .bss section in /tmp/ccu7UWCV.o
+temp.cpp:(.text+0x246): relocation truncated to fit: R_X86_64_32 against symbol `n' defined in .bss section in /tmp/ccu7UWCV.o
+temp.cpp:(.text+0x262): relocation truncated to fit: R_X86_64_PC32 against symbol `n' defined in .bss section in /tmp/ccu7UWCV.o
+temp.cpp:(.text+0x274): relocation truncated to fit: R_X86_64_PC32 against symbol `m' defined in .bss section in /tmp/ccu7UWCV.o
+temp.cpp:(.text+0x2ba): additional relocation overflows omitted from the output
+collect2: error: ld returned 1 exit status
