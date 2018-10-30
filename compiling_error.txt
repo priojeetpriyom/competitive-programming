@@ -1,0 +1,13 @@
+/media/pp/workspace/CODES/competitive-programming/raff3.cpp: In function ‘int main()’:
+/media/pp/workspace/CODES/competitive-programming/raff3.cpp:215:13: error: ‘taken’ was not declared in this scope
+         mem(taken, 0);
+             ^
+/media/pp/workspace/CODES/competitive-programming/raff3.cpp:73:30: note: in definition of macro ‘mem’
+ #define mem(ara, val) memset(ara, val, sizeof ara);
+                              ^~~
+/media/pp/workspace/CODES/competitive-programming/raff3.cpp:215:13: note: suggested alternative: ‘tan’
+         mem(taken, 0);
+             ^
+/media/pp/workspace/CODES/competitive-programming/raff3.cpp:73:30: note: in definition of macro ‘mem’
+ #define mem(ara, val) memset(ara, val, sizeof ara);
+                              ^~~
