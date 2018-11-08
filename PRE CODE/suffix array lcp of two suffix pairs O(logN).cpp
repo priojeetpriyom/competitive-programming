@@ -1,3 +1,4 @@
+// suffix array lcp of two suffix pairs O(logN)
 
 int lcp(int i, int j) {
     int ret = 0;

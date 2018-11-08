@@ -1,3 +1,5 @@
+//suffix array all suffix O(N)
+
 vector<int> kasai(string s, vector<int> sa)
 {
     int n=s.size(),k=0;

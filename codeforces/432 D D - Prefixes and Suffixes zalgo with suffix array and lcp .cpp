@@ -1,5 +1,5 @@
 /*
-    algo:
+    algo: suffix array with z-algo
     idea:
 
 */
