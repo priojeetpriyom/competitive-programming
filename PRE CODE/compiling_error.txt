@@ -1,15 +1,82 @@
-/tmp/ccu7UWCV.o: In function `valid(cell, cell)':
-temp.cpp:(.text+0x1c): relocation truncated to fit: R_X86_64_PC32 against symbol `n' defined in .bss section in /tmp/ccu7UWCV.o
-temp.cpp:(.text+0x30): relocation truncated to fit: R_X86_64_PC32 against symbol `m' defined in .bss section in /tmp/ccu7UWCV.o
-temp.cpp:(.text+0x72): relocation truncated to fit: R_X86_64_32S against symbol `dist' defined in .bss section in /tmp/ccu7UWCV.o
-temp.cpp:(.text+0x91): relocation truncated to fit: R_X86_64_32S against symbol `dist' defined in .bss section in /tmp/ccu7UWCV.o
-/tmp/ccu7UWCV.o: In function `bfs(cell)':
-temp.cpp:(.text+0x191): relocation truncated to fit: R_X86_64_32S against symbol `dist' defined in .bss section in /tmp/ccu7UWCV.o
-temp.cpp:(.text+0x1b0): relocation truncated to fit: R_X86_64_32S against symbol `dist' defined in .bss section in /tmp/ccu7UWCV.o
-/tmp/ccu7UWCV.o: In function `main':
-temp.cpp:(.text+0x241): relocation truncated to fit: R_X86_64_32 against symbol `m' defined in .bss section in /tmp/ccu7UWCV.o
-temp.cpp:(.text+0x246): relocation truncated to fit: R_X86_64_32 against symbol `n' defined in .bss section in /tmp/ccu7UWCV.o
-temp.cpp:(.text+0x262): relocation truncated to fit: R_X86_64_PC32 against symbol `n' defined in .bss section in /tmp/ccu7UWCV.o
-temp.cpp:(.text+0x274): relocation truncated to fit: R_X86_64_PC32 against symbol `m' defined in .bss section in /tmp/ccu7UWCV.o
-temp.cpp:(.text+0x2ba): additional relocation overflows omitted from the output
-collect2: error: ld returned 1 exit status
+/media/pp/workspace/CODES/competitive-programming/PRE CODE/lowest common ancestor .cpp:5:18: error: ‘MX’ was not declared in this scope
+ vector<int> conn[MX];
+                  ^~
+/media/pp/workspace/CODES/competitive-programming/PRE CODE/lowest common ancestor .cpp:7:11: error: ‘MX’ was not declared in this scope
+ int level[MX];
+           ^~
+/media/pp/workspace/CODES/competitive-programming/PRE CODE/lowest common ancestor .cpp:8:10: error: ‘MX’ was not declared in this scope
+ int par [MX] [33];
+          ^~
+/media/pp/workspace/CODES/competitive-programming/PRE CODE/lowest common ancestor .cpp:9:14: error: ‘MX’ was not declared in this scope
+ bool visited[MX];
+              ^~
+/media/pp/workspace/CODES/competitive-programming/PRE CODE/lowest common ancestor .cpp: In function ‘int dfs(int, int)’:
+/media/pp/workspace/CODES/competitive-programming/PRE CODE/lowest common ancestor .cpp:11:5: error: ‘level’ was not declared in this scope
+     level[curNode] = lvl;
+     ^~~~~
+/media/pp/workspace/CODES/competitive-programming/PRE CODE/lowest common ancestor .cpp:11:5: note: suggested alternative: ‘lvl’
+     level[curNode] = lvl;
+     ^~~~~
+     lvl
+/media/pp/workspace/CODES/competitive-programming/PRE CODE/lowest common ancestor .cpp:12:15: error: ‘conn’ was not declared in this scope
+     int len = conn[curNode].size();
+               ^~~~
+/media/pp/workspace/CODES/competitive-programming/PRE CODE/lowest common ancestor .cpp:12:15: note: suggested alternative: ‘clone’
+     int len = conn[curNode].size();
+               ^~~~
+               clone
+/media/pp/workspace/CODES/competitive-programming/PRE CODE/lowest common ancestor .cpp:13:5: error: ‘visited’ was not declared in this scope
+     visited[curNode] = true;
+     ^~~~~~~
+/media/pp/workspace/CODES/competitive-programming/PRE CODE/lowest common ancestor .cpp:13:5: note: suggested alternative: ‘finitel’
+     visited[curNode] = true;
+     ^~~~~~~
+     finitel
+/media/pp/workspace/CODES/competitive-programming/PRE CODE/lowest common ancestor .cpp:18:13: error: ‘par’ was not declared in this scope
+             par[x] [0] = curNode;
+             ^~~
+/media/pp/workspace/CODES/competitive-programming/PRE CODE/lowest common ancestor .cpp: In function ‘void build_sparse_table()’:
+/media/pp/workspace/CODES/competitive-programming/PRE CODE/lowest common ancestor .cpp:28:12: error: ‘visited’ was not declared in this scope
+     memset(visited, 0, sizeof(visited));
+            ^~~~~~~
+/media/pp/workspace/CODES/competitive-programming/PRE CODE/lowest common ancestor .cpp:28:12: note: suggested alternative: ‘finitel’
+     memset(visited, 0, sizeof(visited));
+            ^~~~~~~
+            finitel
+/media/pp/workspace/CODES/competitive-programming/PRE CODE/lowest common ancestor .cpp:31:22: error: ‘level’ was not declared in this scope
+         printf("%d ",level[i]);
+                      ^~~~~
+/media/pp/workspace/CODES/competitive-programming/PRE CODE/lowest common ancestor .cpp:33:5: error: ‘par’ was not declared in this scope
+     par[1] [0] = -1;
+     ^~~
+/media/pp/workspace/CODES/competitive-programming/PRE CODE/lowest common ancestor .cpp: In function ‘int matchLevel(int, int)’:
+/media/pp/workspace/CODES/competitive-programming/PRE CODE/lowest common ancestor .cpp:53:15: error: ‘level’ was not declared in this scope
+     int lim = level[u] - level[v];
+               ^~~~~
+/media/pp/workspace/CODES/competitive-programming/PRE CODE/lowest common ancestor .cpp:56:12: error: ‘par’ was not declared in this scope
+         if(par[u][i]!= -1 && level[par[u][i] ] >= level[v])
+            ^~~
+/media/pp/workspace/CODES/competitive-programming/PRE CODE/lowest common ancestor .cpp: In function ‘int findLca(int, int)’:
+/media/pp/workspace/CODES/competitive-programming/PRE CODE/lowest common ancestor .cpp:63:8: error: ‘level’ was not declared in this scope
+     if(level[u] > level[v])
+        ^~~~~
+/media/pp/workspace/CODES/competitive-programming/PRE CODE/lowest common ancestor .cpp:68:23: error: ‘level’ was not declared in this scope
+     int lim = findLog(level[u]);
+                       ^~~~~
+/media/pp/workspace/CODES/competitive-programming/PRE CODE/lowest common ancestor .cpp:70:12: error: ‘par’ was not declared in this scope
+         if(par[u][i] != -1 && par[v] [i]!=-1 && par[u][i] != par[v][i] )
+            ^~~
+/media/pp/workspace/CODES/competitive-programming/PRE CODE/lowest common ancestor .cpp:76:12: error: ‘par’ was not declared in this scope
+     return par[u] [0];
+            ^~~
+/media/pp/workspace/CODES/competitive-programming/PRE CODE/lowest common ancestor .cpp: In function ‘int main()’:
+/media/pp/workspace/CODES/competitive-programming/PRE CODE/lowest common ancestor .cpp:84:12: error: ‘par’ was not declared in this scope
+     memset(par, -1, sizeof(par));
+            ^~~
+/media/pp/workspace/CODES/competitive-programming/PRE CODE/lowest common ancestor .cpp:87:9: error: ‘conn’ was not declared in this scope
+         conn[u].push_back(v);
+         ^~~~
+/media/pp/workspace/CODES/competitive-programming/PRE CODE/lowest common ancestor .cpp:87:9: note: suggested alternative: ‘clone’
+         conn[u].push_back(v);
+         ^~~~
+         clone

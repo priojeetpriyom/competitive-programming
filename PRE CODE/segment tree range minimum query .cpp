@@ -2,7 +2,6 @@
 using namespace std;
 #define size 100
 int ara[size], tree[size *3] = {1<<31};
-int s,f;
 
 int build(int node, int beg, int endd) {
 //    getchar();
@@ -12,7 +11,7 @@ int build(int node, int beg, int endd) {
     }
 
     int left = node<<1;
-    int right = left + 1;
+    int right = left | 1;
     int mid = (beg + endd)>>1;
 //    build(left, beg, mid);build(right, mid+1, endd);
     tree[node] = min(tree[node], build(left, beg, mid));
@@ -22,7 +21,7 @@ int build(int node, int beg, int endd) {
 
 }
 
-int query(int node, int beg, int endd) {
+int query(int node, int beg, int endd, const int s, const int f) {
     if(beg >= s && endd <= f) {
         return tree[node];
     }
@@ -30,7 +29,7 @@ int query(int node, int beg, int endd) {
         return INT_MAX;
 
     int left = node<<1;
-    int right = left + 1;
+    int right = left | 1;
     int mid = (beg + endd)>>1;
 
     return min(query(left, beg, mid), query(right, mid+1, endd));
