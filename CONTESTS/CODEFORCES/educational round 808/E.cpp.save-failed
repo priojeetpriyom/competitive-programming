@@ -1,0 +1,173 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+typedef long long ll;
+
+
+set<vector<ll> > sset[10];
+
+
+int main()
+{
+//    freopen("in.txt", "r", stdin);
+//    freopen("out.txt", "w", stdout);
+
+    int n, m;
+
+    cin>>n>>m;
+
+
+    int w,c;
+
+    for(int i=0; i<n; i++)
+    {
+        scanf("%d %d", &w, &c);
+        (*sset[w]).push_back(c);
+    }
+
+    for(int i=1; i<=3; i++)
+        sort(sset[i].begin(), sset[i].end());
+
+    ll ans=0;
+
+    set<ll>:: iterator it1, it2,it3;
+    ll cost1, cost2, cost3;
+
+
+    if(m%3==1) {
+
+        if(sset[1].size()) {
+            ans+= *(--sset[1].end());
+            sset[1].erase(--sset[1].end());
+        }
+    } else if(m%3==2) {
+        if(sset[2].size()) {
+            cost2 = *(--sset[2].end());
+            sset[2].erase(--sset[2].end());
+
+        }
+        else cost2=0;
+        cost1=0;
+        if(sset[1].size())
+        {
+            cost1+= *(--sset[1].end());
+            sset[1].erase(--sset[1].end());
+        }
+        if(sset[1].size())
+            {
+                cost1+= *(--sset[1].end());
+            sset[1].erase(--sset[1].end());
+
+            }
+        ans+= max(cost1, cost2);
+    }
+
+
+
+    int i1;
+    while(m>2) {
+    int i2=0;
+        cost1=cost2=cost3=i1=0;
+        it1= sset[1].end();
+        if(sset[1].size()) {
+            it1--;
+            cost1+= *it1;
+            i1++;
+            if(it1!= sset[1].begin())
+            {
+                i1++;
+                it1--;
+                cost1+= *it1;
+            }
+            if(it1!= sset[1].begin())
+                {
+                    i1++;
+                   it1--;
+                cost1+= *it1;
+                }
+        }
+        it2 = sset[2].end();
+
+        if(sset[2].size()) {
+            cost2+= *(--it2);
+
+            if(sset[1].size())
+            {
+
+                cost2+= *(-- sset[1].end());
+            }
+        }
+        it3 = sset[3].end();
+        if(sset[3].size()) {
+            cost3+= *(--it3);
+        }
+
+        if(cost1>=cost2 && cost1 >= cost3 && sset[1].size()) {
+            ans+= cost1;
+            sset[1].erase(it1, sset[1].end());
+            m-=i1;
+        } else if(cost2 >= cost1 && cost2 >= cost3 && sset[2].size()) {
+            ans+=cost2;
+                sset[2].erase(it2);
+            if(sset[1].size()) {
+                sset[1].erase(--sset[1].end());
+                m-=3;
+            } else m-=2;
+        } else if(cost3>=cost1 && cost3 >= cost2 && sset[3].size()) {
+            ans+= cost3;
+            sset[3].erase(it3);
+            m-=3;
+        } else break;
+
+    }
+
+
+    if(m==1) {
+
+        if(sset[1].size()) {
+            ans+= *(--sset[1].end());
+            sset[1].erase(--sset[1].end());
+        }
+    } else if(m==2) {
+        if(sset[2].size()) {
+            cost2 = *(--sset[2].end());
+            sset[2].erase(--sset[2].end());
+
+        }
+        else cost2=0;
+        cost1=0;
+        if(sset[1].size())
+        {
+            cost1+= *(--sset[1].end());
+            sset[1].erase(--sset[1].end());
+        }
+        if(sset[1].size())
+            {
+                cost1+= *(--sset[1].end());
+            sset[1].erase(--sset[1].end());
+
+            }
+        ans+= max(cost1, cost2);
+    }
+
+    printf("m_left %d set_1 %d set_2 %d set_3 %d\n", m, sset[1].size(), sset[2].size(), sset[3].size());
+
+    printf("sset_3");
+    for( it3 = sset[3].begin(); it3!= sset[3].end(); it3++) {
+        printf(" %d",*it3);
+    } printf("\n");
+
+    printf("sset_2");
+    for( it2 = sset[2].begin(); it2!= sset[2].end(); it2++) {
+        printf(" %d",*it2);
+    } printf("\n");
+
+
+
+
+    cout<<ans<<endl;
+
+    return 0;
+}
+
+

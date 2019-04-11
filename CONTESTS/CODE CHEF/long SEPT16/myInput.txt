@@ -1,0 +1,20 @@
+6 7
+WMW
+#M#
+##M
+M##
+M##
+#M#
+WMW
+5 5
+W#W
+###
+###
+###
+W#W
+5 5
+WMW
+MMM
+MMM
+MMM
+WMW

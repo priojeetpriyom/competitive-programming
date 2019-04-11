@@ -1,0 +1,31 @@
+1-> Perfect: 1!
+2-> Perfect: 6!
+3-> Perfect: 28!
+4-> Given number is NOT prime! NO perfect number is available.
+5-> Perfect: 496!
+6-> Given number is NOT prime! NO perfect number is available.
+7-> Perfect: 8128!
+8-> Given number is NOT prime! NO perfect number is available.
+9-> Given number is NOT prime! NO perfect number is available.
+10-> Given number is NOT prime! NO perfect number is available.
+11-> Given number is prime. But, NO perfect number is available.
+12-> Given number is NOT prime! NO perfect number is available.
+13-> Perfect: 33550336!
+14-> Given number is NOT prime! NO perfect number is available.
+15-> Given number is NOT prime! NO perfect number is available.
+16-> Given number is NOT prime! NO perfect number is available.
+17-> Perfect: 8589869056!
+18-> Given number is NOT prime! NO perfect number is available.
+19-> Perfect: 137438691328!
+20-> Given number is NOT prime! NO perfect number is available.
+21-> Given number is NOT prime! NO perfect number is available.
+22-> Given number is NOT prime! NO perfect number is available.
+23-> Given number is prime. But, NO perfect number is available.
+24-> Given number is NOT prime! NO perfect number is available.
+25-> Given number is NOT prime! NO perfect number is available.
+26-> Given number is NOT prime! NO perfect number is available.
+27-> Given number is NOT prime! NO perfect number is available.
+28-> Given number is NOT prime! NO perfect number is available.
+29-> Given number is prime. But, NO perfect number is available.
+30-> Given number is NOT prime! NO perfect number is available.
+31-> Perfect: 2305843008139952128!

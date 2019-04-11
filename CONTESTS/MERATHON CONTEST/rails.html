@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<!-- saved from url=(0069)http://acm.hust.edu.cn/vjudge/contest/view.action?cid=93243#problem/J -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+  
+
+
+
+
+
+<link rel="shortcut icon" href="http://acm.hust.edu.cn/vjudge/images/logo.ico">
+<link rel="stylesheet" type="text/css" href="./rails_files/style.min.css">
+<script async="" src="./rails_files/analytics.js"></script><script type="text/javascript">var basePath = "/vjudge";</script>
+<script type="text/javascript" src="./rails_files/script.min.js"></script>
+
+
+
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    
+        ga('create', 'UA-13231844-2', { 'userId': 'priojeetpriyom' });
+    
+    
+	ga('send', 'pageview');
+</script>
+
+        <title>MU Marathon Practice Contest - 1 - Virtual Judge</title>
+
+
+
+    </head>
+
+    <body>
+        <input type="hidden" name="" id="js_require_view_contest">
+        
+  
+
+
+
+<div id="cssmenu"><div id="menu-line" style="width: 117px; left: 297px;"></div><div id="menu-button">Menu</div>
+<ul>
+    <li id="nav_home"><a href="http://acm.hust.edu.cn/vjudge/toIndex.action">Home</a></li>
+    <li id="nav_problem"><a href="http://acm.hust.edu.cn/vjudge/problem/toListProblem.action">Problem</a></li>
+    <li id="nav_status"><a href="http://acm.hust.edu.cn/vjudge/problem/status.action">Status</a></li>
+    <li id="nav_contest" class="has-sub active"><span class="submenu-button"></span><a href="http://acm.hust.edu.cn/vjudge/contest/toListContest.action">Contest</a>
+       <ul>
+          <li><a href="http://acm.hust.edu.cn/vjudge/contest/toAddContest.action" class="login">Add Contest</a></li>
+          <li><a href="http://acm.hust.edu.cn/vjudge/contest/statistic.action">Statistic</a></li>
+       </ul>
+    </li>
+	<li style="float:right">
+        
+            <a id="logout" href="javascript:void(0)">LOGOUT</a>
+        
+        
+    </li>
+    
+        <li style="float:right" class="has-sub"><span class="submenu-button"></span>
+            <a id="my_account" uid="38199" href="http://acm.hust.edu.cn/vjudge/user/profile.action?uid=38199" target="_blank">
+                priojeetpriyom
+            </a>
+            <ul>
+                <li>
+                    <a href="http://acm.hust.edu.cn/vjudge/user/toUpdate.action?uid=38199" target="_blank">UPDATE</a>
+                </li>
+            </ul>
+        </li>
+    
+    
+</ul>
+</div>
+
+
+
+        
+            <marquee id="contest_announcement" height="25" style="text-align: center; color: red; font-weight: bold; height: 25px;" onmouseout="this.start()" onmouseover="this.stop()" scrollamount="2" scrolldelay="1" behavior="alternate">Best of luck and have fun!!! :D</marquee>
+        
+        <input type="hidden" name="cid" value="93243" id="cid">
+        
+        <div id="contest_title" class="ptt">
+            
+            MU Marathon Practice Contest - 1
+        </div>
+        <div id="time_container" style="width:96%;height:40px;margin:auto;font-family: Lucida Grande,Lucida Sans,Arial,sans-serif;font-size: 12px;">
+            <div id="time_index" style="text-align: right; float: left; width: 21.4326%;">
+                <span>23:19:09</span>
+            </div>
+            <div id="time_total" style="text-align:right;">
+                <span>120:00:00</span>
+            </div>
+            <div id="time_controller" style="clear:both" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"><div class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min" style="width: 19.4326%;"></div><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 19.4326%;"></span></div>
+        </div>
+        
+        <div id="contest_tabs" style="min-width: 0px; background: transparent;" class="ui-tabs ui-widget ui-widget-content ui-corner-all">
+            <ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all" role="tablist">
+                <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="overview" aria-labelledby="ui-id-1" aria-selected="false" aria-expanded="false"><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=93243#overview" rel="#overview" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-1">Overview</a></li>
+                
+                    <li class="ui-state-default ui-corner-top ui-tabs-active ui-state-active" role="tab" tabindex="0" aria-controls="problem" aria-labelledby="ui-id-2" aria-selected="true" aria-expanded="true"><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=93243#problem" rel="#problem" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-2">Problem</a></li>
+                    <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="status" aria-labelledby="ui-id-3" aria-selected="false" aria-expanded="false"><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=93243#status" rel="#status" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-3">Status</a></li>
+                    <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="rank" aria-labelledby="ui-id-4" aria-selected="false" aria-expanded="false"><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=93243#rank" rel="#rank" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-4">Rank (53)</a></li>
+                
+                
+            </ul>
+            
+
+
+  
+
+
+<div id="overview" aria-labelledby="ui-id-1" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-hidden="true" style="display: none;">
+	<table style="margin:auto" class="plm">
+		<tbody><tr>
+			<td class="alignRight"><b>Current Time: </b></td>
+			<td class="alignLeft"><span class="currentTime">2015-10-01 18:07:11</span></td>
+			<td class="alignRight"><b>Contest Type: </b></td>
+			<td class="alignLeft"><font color="red">Private</font></td>
+		</tr>
+		<tr>
+			<td class="alignRight"><b>Start Time: </b></td>
+			<td class="alignLeft"><span class="plainDate">2015-09-30 19:00:00</span></td>
+			<td class="alignRight"><b>Contest Status: </b></td>
+			<td class="alignLeft">
+				
+				<font color="red">Running</font>
+				
+			</td>
+		</tr>
+		<tr>
+			<td class="alignRight"><b>End Time: </b></td>
+			<td class="alignLeft"><span class="plainDate">2015-10-05 19:00:00</span></td>
+			<td class="alignRight"><b>Manager: </b></td>
+			<td class="alignLeft"><a href="http://acm.hust.edu.cn/vjudge/user/profile.action?uid=7262">shantanushanto</a></td>
+		</tr>
+	</tbody></table>
+	
+	
+	<div id="contest_opt" style="text-align:center;margin-top:10px">
+		
+		
+	</div>
+	<div id="viewContest_wrapper" class="dataTables_wrapper dt-jqueryui no-footer"><div class="fg-toolbar ui-toolbar ui-widget-header ui-helper-clearfix ui-corner-tl ui-corner-tr"></div><table style="width:960px;margin-top:20px" cellpadding="0" cellspacing="0" border="0" class="display dataTable no-footer" id="viewContest" role="grid">
+		<thead>
+			<tr role="row"><th style="text-align: right;width:20px" class="ui-state-default sorting_disabled" rowspan="1" colspan="1"><div class="DataTables_sort_wrapper"><span class="DataTables_sort_icon"></span></div></th><th style="text-align: left;width:90px" class="ui-state-default sorting_disabled" rowspan="1" colspan="1"><div class="DataTables_sort_wrapper"><span class="DataTables_sort_icon"></span></div></th><th style="text-align: right;width:90px" class="ui-state-default sorting_disabled" rowspan="1" colspan="1"><div class="DataTables_sort_wrapper">ID<span class="DataTables_sort_icon"></span></div></th><th style="text-align: left;padding-left:50px;" class="ui-state-default sorting_disabled" rowspan="1" colspan="1"><div class="DataTables_sort_wrapper">Title<span class="DataTables_sort_icon"></span></div></th></tr>
+		</thead>
+		
+		
+			<tbody>
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+	<tr role="row" class="odd">
+				<td style="text-align: right"></td>
+				<td style="text-align: center"><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=93243#status//A/1">10</a> / <a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=93243#status//A/0">14</a></td>
+				<td style="text-align: right">Problem A</td>
+				
+				<td style="padding-left:50px;">
+					<a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=93243#problem/A">
+						Relational Operator
+					</a>
+				</td>
+			</tr><tr role="row" class="even">
+				<td style="text-align: right"></td>
+				<td style="text-align: center"><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=93243#status//B/1">3</a> / <a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=93243#status//B/0">13</a></td>
+				<td style="text-align: right">Problem B</td>
+				
+				<td style="padding-left:50px;">
+					<a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=93243#problem/B">
+						Box of Bricks
+					</a>
+				</td>
+			</tr><tr role="row" class="odd">
+				<td style="text-align: right"></td>
+				<td style="text-align: center"><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=93243#status//C/1">1</a> / <a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=93243#status//C/0">4</a></td>
+				<td style="text-align: right">Problem C</td>
+				
+				<td style="padding-left:50px;">
+					<a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=93243#problem/C">
+						Cola
+					</a>
+				</td>
+			</tr><tr role="row" class="even">
+				<td style="text-align: right"></td>
+				<td style="text-align: center"></td>
+				<td style="text-align: right">Problem D</td>
+				
+				<td style="padding-left:50px;">
+					<a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=93243#problem/D">
+						Minesweeper
+					</a>
+				</td>
+			</tr><tr role="row" class="odd">
+				<td style="text-align: right"></td>
+				<td style="text-align: center"><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=93243#status//E/1">0</a> / <a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=93243#status//E/0">1</a></td>
+				<td style="text-align: right">Problem E</td>
+				
+				<td style="padding-left:50px;">
+					<a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=93243#problem/E">
+						Word Scramble
+					</a>
+				</td>
+			</tr><tr role="row" class="even">
+				<td style="text-align: right"></td>
+				<td style="text-align: center"></td>
+				<td style="text-align: right">Problem F</td>
+				
+				<td style="padding-left:50px;">
+					<a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=93243#problem/F">
+						Common Permutation
+					</a>
+				</td>
+			</tr><tr role="row" class="odd">
+				<td style="text-align: right"><img src="./rails_files/no.png" height="15"></td>
+				<td style="text-align: center"><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=93243#status//G/1">0</a> / <a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=93243#status//G/0">9</a></td>
+				<td style="text-align: right">Problem G</td>
+				
+				<td style="padding-left:50px;">
+					<a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=93243#problem/G">
+						Parentheses Balance
+					</a>
+				</td>
+			</tr><tr role="row" class="even">
+				<td style="text-align: right"></td>
+				<td style="text-align: center"></td>
+				<td style="text-align: right">Problem H</td>
+				
+				<td style="padding-left:50px;">
+					<a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=93243#problem/H">
+						Throwing cards away I
+					</a>
+				</td>
+			</tr><tr role="row" class="odd">
+				<td style="text-align: right"></td>
+				<td style="text-align: center"></td>
+				<td style="text-align: right">Problem I</td>
+				
+				<td style="padding-left:50px;">
+					<a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=93243#problem/I">
+						Ferry Loading IV
+					</a>
+				</td>
+			</tr><tr role="row" class="even">
+				<td style="text-align: right"></td>
+				<td style="text-align: center"></td>
+				<td style="text-align: right">Problem J</td>
+				
+				<td style="padding-left:50px;">
+					<a href="./rails_files/rails.html">
+						Rails
+					</a>
+				</td>
+			</tr><tr role="row" class="odd">
+				<td style="text-align: right"></td>
+				<td style="text-align: center"></td>
+				<td style="text-align: right">Problem K</td>
+				
+				<td style="padding-left:50px;">
+					<a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=93243#problem/K">
+						Stacks of Flapjacks
+					</a>
+				</td>
+			</tr><tr role="row" class="even">
+				<td style="text-align: right"></td>
+				<td style="text-align: center"><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=93243#status//L/1">1</a> / <a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=93243#status//L/0">7</a></td>
+				<td style="text-align: right">Problem L</td>
+				
+				<td style="padding-left:50px;">
+					<a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=93243#problem/L">
+						Flip Sort
+					</a>
+				</td>
+			</tr><tr role="row" class="odd">
+				<td style="text-align: right"></td>
+				<td style="text-align: center"></td>
+				<td style="text-align: right">Problem M</td>
+				
+				<td style="padding-left:50px;">
+					<a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=93243#problem/M">
+						Babelfish
+					</a>
+				</td>
+			</tr><tr role="row" class="even">
+				<td style="text-align: right"></td>
+				<td style="text-align: center"></td>
+				<td style="text-align: right">Problem N</td>
+				
+				<td style="padding-left:50px;">
+					<a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=93243#problem/N">
+						Team Queue
+					</a>
+				</td>
+			</tr><tr role="row" class="odd">
+				<td style="text-align: right"></td>
+				<td style="text-align: center"></td>
+				<td style="text-align: right">Problem O</td>
+				
+				<td style="padding-left:50px;">
+					<a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=93243#problem/O">
+						Printer Queue
+					</a>
+				</td>
+			</tr></tbody></table><div class="fg-toolbar ui-toolbar ui-widget-header ui-helper-clearfix ui-corner-bl ui-corner-br"></div></div>
+	<div class="description">
+		
+	</div>
+	
+	
+</div>
+
+            
+                
+
+
+  
+
+
+<div id="problem" style="font-size: 14px; display: block;" aria-labelledby="ui-id-2" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-hidden="false">
+	<div id="problem_number_container" style="margin: auto; text-align: center;" class="ui-buttonset">
+		<input type="radio" name="problem_number" id="problem_numberA" checked="checked" value="A" onclick="this.blur()" class="ui-helper-hidden-accessible"><label for="problem_numberA" class="ui-button ui-widget ui-state-default ui-button-text-only ui-corner-left" role="button" aria-pressed="false"><span class="ui-button-text">A</span></label>
+<input type="radio" name="problem_number" id="problem_numberB" value="B" onclick="this.blur()" class="ui-helper-hidden-accessible"><label for="problem_numberB" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-pressed="false"><span class="ui-button-text">B</span></label>
+<input type="radio" name="problem_number" id="problem_numberC" value="C" onclick="this.blur()" class="ui-helper-hidden-accessible"><label for="problem_numberC" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-pressed="false"><span class="ui-button-text">C</span></label>
+<input type="radio" name="problem_number" id="problem_numberD" value="D" onclick="this.blur()" class="ui-helper-hidden-accessible"><label for="problem_numberD" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-pressed="false"><span class="ui-button-text">D</span></label>
+<input type="radio" name="problem_number" id="problem_numberE" value="E" onclick="this.blur()" class="ui-helper-hidden-accessible"><label for="problem_numberE" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-pressed="false"><span class="ui-button-text">E</span></label>
+<input type="radio" name="problem_number" id="problem_numberF" value="F" onclick="this.blur()" class="ui-helper-hidden-accessible"><label for="problem_numberF" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-pressed="false"><span class="ui-button-text">F</span></label>
+<input type="radio" name="problem_number" id="problem_numberG" value="G" onclick="this.blur()" class="ui-helper-hidden-accessible"><label for="problem_numberG" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-pressed="false"><span class="ui-button-text">G</span></label>
+<input type="radio" name="problem_number" id="problem_numberH" value="H" onclick="this.blur()" class="ui-helper-hidden-accessible"><label for="problem_numberH" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-pressed="false"><span class="ui-button-text">H</span></label>
+<input type="radio" name="problem_number" id="problem_numberI" value="I" onclick="this.blur()" class="ui-helper-hidden-accessible"><label for="problem_numberI" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-pressed="false"><span class="ui-button-text">I</span></label>
+<input type="radio" name="problem_number" id="problem_numberJ" value="J" onclick="this.blur()" class="ui-helper-hidden-accessible"><label for="problem_numberJ" class="ui-button ui-widget ui-state-default ui-button-text-only ui-state-active" role="button" aria-pressed="true"><span class="ui-button-text">J</span></label>
+<input type="radio" name="problem_number" id="problem_numberK" value="K" onclick="this.blur()" class="ui-helper-hidden-accessible"><label for="problem_numberK" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-pressed="false"><span class="ui-button-text">K</span></label>
+<input type="radio" name="problem_number" id="problem_numberL" value="L" onclick="this.blur()" class="ui-helper-hidden-accessible"><label for="problem_numberL" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-pressed="false"><span class="ui-button-text">L</span></label>
+<input type="radio" name="problem_number" id="problem_numberM" value="M" onclick="this.blur()" class="ui-helper-hidden-accessible"><label for="problem_numberM" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-pressed="false"><span class="ui-button-text">M</span></label>
+<input type="radio" name="problem_number" id="problem_numberN" value="N" onclick="this.blur()" class="ui-helper-hidden-accessible"><label for="problem_numberN" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-pressed="false"><span class="ui-button-text">N</span></label>
+<input type="radio" name="problem_number" id="problem_numberO" value="O" onclick="this.blur()" class="ui-helper-hidden-accessible"><label for="problem_numberO" class="ui-button ui-widget ui-state-default ui-button-text-only ui-corner-right" role="button" aria-pressed="false"><span class="ui-button-text">O</span></label>
+
+	</div>
+
+	<div class="plm" style="clear:both">
+		<div class="ptt" id="problem_title"><span style="color:green">J - </span>Rails</div>
+		<span id="crawling" style="display:none" class="crawlInfo">
+			<b><font color="green">Crawling in process...</font></b>
+		</span>
+		<span id="crawlFailed" style="display:none" class="crawlInfo">
+			<b><font color="red">Crawling failed</font></b>
+		</span>
+		<span id="crawlSuccess" style="display: inline;" class="crawlInfo">
+			<b>Time Limit:</b><span id="timeLimit">3000</span>MS&nbsp;&nbsp;&nbsp;&nbsp;
+			<b>Memory Limit:</b><span id="memoryLimit">0</span>KB&nbsp;&nbsp;&nbsp;&nbsp;
+			<b>64bit IO Format:</b><span id="_64IOFormat">%lld &amp; %llu</span>
+		</span>
+		<div id="problem_opt" style="font-size:12px;margin-top:10px">
+			<a id="submit" href="javascript:void(0)" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button"><span class="ui-button-text">Submit</span></a>
+			<a id="problem_status" href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=93243#status//J/0" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button"><span class="ui-button-text">Status</span></a>
+			
+		</div>
+	</div>
+
+	<div style="width:960px;margin:auto">
+		
+		<div class="hiddable" id="vj_description" style="display: block;"><p class="pst">Description</p><div class="textBG"><style type="text/css">h1,h2,h3,h4,h5,h6{margin-bottom:0;}div.textBG p{margin: 0 0 0.0001pt;}</style><span style="float:right"><a target="_blank" href="http://7xjob4.com1.z0.glb.clouddn.com/21455e1d8d4a7b8170202987eb38b76f"><img width="100" height="26" border="0" title="Download as PDF" alt="Download as PDF" src="./rails_files/button_pdf.png"></a></span><div style="clear:both"></div><!--Converted with LaTeX2HTML 98.1 release (February 19th, 1998)
+originally by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others --><title>Rails</title><meta name="description" content="Rails"><meta name="keywords" content="htmlatex"><meta name="resource-type" content="document"><meta name="distribution" content="global"><link rel="STYLESHEET" href="./rails_files/htmlatex.css"><p> There is a famous railway station in PopPush City. Country there is incredibly hilly. The station was built in last century. Unfortunately, funds were extremely limited that time. It was possible to establish only a surface track. Moreover, it turned out that the station could be only a dead-end one (see picture) and due to lack of available space it could have only one track. </p><p></p><div align="CENTER"><br><img align="BOTTOM" border="0" src="./rails_files/1d4560f6b64b12a4e8bac5f27462e9c3" alt="\begin{picture}(6774,3429)(0,-10)
+\put(1789.500,1357.500){\arc{3645.278}{4.7247}...
+...tFigFont{14}{16.8}{\rmdefault}{\mddefault}{\updefault}Station}}}}}
+\end{picture}"><br></div><p> The local tradition is that every train arriving from the direction A continues in the direction B with coaches reorganized in some way. Assume that the train arriving from the direction A has <!-- MATH: $N \leŸ 1000$ --><img width="79" height="32" align="MIDDLE" border="0" src="./rails_files/a0151349f4259474fa089759d25a5194" alt="$N \leŸ 1000$"> coaches numbered in increasing order <!-- MATH: $1, 2, \dots, N$ --><img width="84" height="32" align="MIDDLE" border="0" src="./rails_files/7455c9c8cde25fc247293073b1474b78" alt="$1, 2, \dots, N$">. The chief for train reorganizations must know whether it is possible to marshal coaches continuing in the direction B so that their order will be <!-- MATH: $a_1. a_2, \dots, a_N$ --><img width="104" height="30" align="MIDDLE" border="0" src="./rails_files/e147913d040182a5e97b813bcf90786e" alt="$a_1. a_2, \dots, a_N$">. Help him and write a program that decides whether it is possible to get the required order of coaches. You can assume that single coaches can be disconnected from the train before they enter the station and that they can move themselves until they are on the track in the direction B. You can also suppose that at any time there can be located as many coaches as necessary in the station. But once a coach has entered the station it cannot return to the track in the direction A and also once it has left the station in the direction B it cannot return back to the station. </p><p></p><h2><font color="#0070E8"><a name="SECTION0001001000000000000000" href=""> Input</a>&nbsp;</font></h2> The input file consists of blocks of lines. Each block except the last describes one train and possibly more requirements for its reorganization. In the first line of the block there is the integer <i>N</i> described above. In each of the next lines of the block there is a permutation of <!-- MATH: $1, 2, \dots, N$ --><img width="84" height="32" align="MIDDLE" border="0" src="./rails_files/7455c9c8cde25fc247293073b1474b78" alt="$1, 2, \dots, N$"> The last line of the block contains just 0. 
+  <p> The last block consists of just one line containing 0. </p><p></p><h2><font color="#0070E8"><a name="SECTION0001002000000000000000" href=""> Output</a>&nbsp;</font></h2> The output file contains the lines corresponding to the lines with permutations in the input file. A line of the output file contains <tt>Yes</tt> if it is possible to marshal the coaches in the order required on the corresponding line of the input file. Otherwise it contains <tt>No</tt>. In addition, there is one empty line after the lines corresponding to one block of the input file. There is no line in the output file corresponding to the last ``null'' block of the input file. 
+  <p></p><h2><font color="#0070E8"><a name="SECTION0001003000000000000000" href=""> Sample Input</a>&nbsp;</font></h2><p></p><pre>5
+1 2 3 4 5
+5 4 1 2 3
+0
+6
+6 5 4 3 2 1
+0
+0
+</pre><p></p><h2><font color="#0070E8"><a name="SECTION0001004000000000000000" href=""> Sample Output</a>&nbsp;</font></h2><p></p><pre>Yes
+No
+
+Yes
+</pre><p></p><p></p></div></div>
+		<div class="hiddable" id="vj_input" style="display: none;"><p class="pst">Input</p><div class="textBG"></div></div>
+		<div class="hiddable" id="vj_output" style="display: none;"><p class="pst">Output</p><div class="textBG"></div></div>
+		<div class="hiddable" id="vj_sampleInput" style="display: none;"><p class="pst">Sample Input</p><div class="textBG"></div></div>
+		<div class="hiddable" id="vj_sampleOutput" style="display: none;"><p class="pst">Sample Output</p><div class="textBG"></div></div>
+		<div class="hiddable" id="vj_hint" style="display: none;"><p class="pst">Hint</p><div class="textBG"></div></div>
+	</div>
+	
+	
+</div>
+
+                
+
+
+  
+
+
+<div id="status" style="font-size: 14px; padding: 12px 0px; display: none;" aria-labelledby="ui-id-3" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-hidden="true">
+    <table cellpadding="0" cellspacing="0" border="0" class="display status_table" id="table_status">
+        <thead>
+            <tr>
+                <th class="run_id">RunID</th>
+                <th class="username">User<br><input type="search" id="un" name="un" class="search_text" style="width:100%"></th>
+                <th class="prob_num">Problem<br><select name="num" id="num" style="width: 100%; display: none;"><option value="-">All</option>
+    <option value="A">A - Relational Operator</option>
+    <option value="B">B - Box of Bricks</option>
+    <option value="C">C - Cola</option>
+    <option value="D">D - Minesweeper</option>
+    <option value="E">E - Word Scramble</option>
+    <option value="F">F - Common Permutation</option>
+    <option value="G">G - Parentheses Balance</option>
+    <option value="H">H - Throwing cards away I</option>
+    <option value="I">I - Ferry Loading IV</option>
+    <option value="J">J - Rails</option>
+    <option value="K">K - Stacks of Flapjacks</option>
+    <option value="L">L - Flip Sort</option>
+    <option value="M">M - Babelfish</option>
+    <option value="N">N - Team Queue</option>
+    <option value="O">O - Printer Queue</option>
+
+
+</select><span class="ui-selectmenu-button ui-widget ui-state-default ui-corner-all" tabindex="0" id="num-button" role="combobox" aria-expanded="false" aria-autocomplete="list" aria-owns="num-menu" aria-haspopup="true" style="width: 98px;"><span class="ui-icon ui-icon-triangle-1-s"></span><span class="ui-selectmenu-text">All</span></span>
+
+</th>
+                <th class="result">
+                    Result
+                    <br>
+                    <select name="res" id="res" style="width: 100%; display: none;">
+                        <option value="0">All</option>
+                        <option value="1" data-class="ui-icon-check">Accepted</option>
+                        <option value="2" data-class="ui-icon-lightbulb">Presentation Error</option>
+                        <option value="3" data-class="ui-icon-closethick">Wrong Answer</option>
+                        <option value="4" data-class="ui-icon-clock">Time Limit Exceed</option>
+                        <option value="5" data-class="ui-icon-notice">Memory Limit Exceed</option>
+                        <option value="6" data-class="ui-icon-notice">Output Limit Exceed</option>
+                        <option value="7" data-class="ui-icon-notice">Runtime Error</option>
+                        <option value="8" data-class="ui-icon-notice">Compile Error</option>
+                        <option value="9" data-class="ui-icon-notice">Unknown Error</option>
+                        <option value="10" data-class="ui-icon-notice">Submit Error</option>
+                        <option value="11" data-class="ui-icon-arrowrefresh-1-s">Queuing &amp;&amp; Judging</option>
+                    </select><span class="ui-selectmenu-button ui-widget ui-state-default ui-corner-all" tabindex="0" id="res-button" role="combobox" aria-expanded="false" aria-autocomplete="list" aria-owns="res-menu" aria-haspopup="true" style="width: 98px;"><span class="ui-icon ui-icon-triangle-1-s"></span><span class="ui-selectmenu-text">All</span></span>
+                </th>
+                <th class="memory">Memory<br>(KB)</th>
+                <th class="time">Time<br>(ms)</th>
+                <th class="language">
+                    Language
+                    <br>
+                    <select name="lang" id="lang" style="width: 100%; display: none;">
+                        <option value="">All</option>
+                        <option value="CPP">C++</option>
+                        <option value="C">C</option>
+                        <option value="JAVA">Java</option>
+                        <option value="PASCAL">Pascal</option>
+                        <option value="PYTHON">Python</option>
+                        <option value="CSHARP">C#</option>
+                        <option value="RUBY">Ruby</option>
+                        <option value="OTHER">Other</option>
+                    </select><span class="ui-selectmenu-button ui-widget ui-state-default ui-corner-all" tabindex="0" id="lang-button" role="combobox" aria-expanded="false" aria-autocomplete="list" aria-owns="lang-menu" aria-haspopup="true" style="width: 98px;"><span class="ui-icon ui-icon-triangle-1-s"></span><span class="ui-selectmenu-text">All</span></span>
+                </th>
+                <th class="length">Length<br>(Bytes)</th>
+                <th class="date">Submit Time</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <input type="hidden" name="isSup" value="" id="isSup">
+    <input type="button" id="filter" value="Filter">
+    <input type="button" id="reset" value="Reset">
+
+</div>
+
+                
+
+
+  
+
+
+<div id="rank" style="padding: 0px; min-height: 300px; display: none; width: 1680px;" aria-labelledby="ui-id-4" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-hidden="true">
+
+	<div id="rank_header" style="display: none; position: fixed; top: 0px; z-index: 100; width: 1680px; background-color: rgb(242, 252, 247);" data-id="rank_header">
+		<div class="rank">Rank</div>
+		<div class="id">ID</div>
+		<div class="solve">Solve</div>
+		<div class="penalty_td">Penalty</div>
+		
+			<div class="standing_time"><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=93243#problem/A">A</a></div>
+		
+			<div class="standing_time"><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=93243#problem/B">B</a></div>
+		
+			<div class="standing_time"><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=93243#problem/C">C</a></div>
+		
+			<div class="standing_time"><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=93243#problem/D">D</a></div>
+		
+			<div class="standing_time"><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=93243#problem/E">E</a></div>
+		
+			<div class="standing_time"><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=93243#problem/F">F</a></div>
+		
+			<div class="standing_time"><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=93243#problem/G">G</a></div>
+		
+			<div class="standing_time"><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=93243#problem/H">H</a></div>
+		
+			<div class="standing_time"><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=93243#problem/I">I</a></div>
+		
+			<div class="standing_time"><a href="./rails_files/rails.html">J</a></div>
+		
+			<div class="standing_time"><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=93243#problem/K">K</a></div>
+		
+			<div class="standing_time"><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=93243#problem/L">L</a></div>
+		
+			<div class="standing_time"><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=93243#problem/M">M</a></div>
+		
+			<div class="standing_time"><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=93243#problem/N">N</a></div>
+		
+			<div class="standing_time"><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=93243#problem/O">O</a></div>
+		
+		<div style="text-align:right"></div>
+	</div>
+	
+	<div id="rank_data_destination" style="display:none"></div>
+	<div id="rank_data_source"><div id="rank_header_1" style="width: 1680px; display: block; background-color: rgb(242, 252, 247);" data-id="rank_header">
+		<div class="rank">Rank</div>
+		<div class="id">ID</div>
+		<div class="solve">Solve</div>
+		<div class="penalty_td">Penalty</div>
+		
+			<div class="standing_time"><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=93243#problem/A">A</a></div>
+		
+			<div class="standing_time"><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=93243#problem/B">B</a></div>
+		
+			<div class="standing_time"><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=93243#problem/C">C</a></div>
+		
+			<div class="standing_time"><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=93243#problem/D">D</a></div>
+		
+			<div class="standing_time"><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=93243#problem/E">E</a></div>
+		
+			<div class="standing_time"><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=93243#problem/F">F</a></div>
+		
+			<div class="standing_time"><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=93243#problem/G">G</a></div>
+		
+			<div class="standing_time"><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=93243#problem/H">H</a></div>
+		
+			<div class="standing_time"><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=93243#problem/I">I</a></div>
+		
+			<div class="standing_time"><a href="./rails_files/rails.html">J</a></div>
+		
+			<div class="standing_time"><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=93243#problem/K">K</a></div>
+		
+			<div class="standing_time"><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=93243#problem/L">L</a></div>
+		
+			<div class="standing_time"><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=93243#problem/M">M</a></div>
+		
+			<div class="standing_time"><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=93243#problem/N">N</a></div>
+		
+			<div class="standing_time"><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=93243#problem/O">O</a></div>
+		
+		<div style="text-align:right"></div>
+	</div><div data-id="77949_93243" class="disp cur_tr" cid="93243" u="N_usrat"><div class="meta_td rank">1</div><div class="meta_td id" title="N_usrat (Nusrat)"><a target="_blank" href="http://acm.hust.edu.cn/vjudge/user/profile.action?uid=77949">N_usrat<span style="color:gray">(Nusrat)</span></a></div><div class="meta_td solve">3</div><div class="meta_td penalty_td" v0="6:54:15" v1="414">414</div><div class="solvedfirst standing_time" pid="0" title="0:30:50">0:30:50<br>　</div><div class="solvedfirst standing_time" pid="1" title="1:10:16">1:10:16<br><span>(-3)</span></div><div class="standing_time"></div><div class="standing_time"></div><div class="red standing_time" pid="4">　<br><span>(-1)</span></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="solvedfirst standing_time" pid="11" title="3:53:09">3:53:09<br><span>(-1)</span></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div></div><div data-id="77957_93243" class="disp cur_tr" cid="93243" u="jakaria_ahmed"><div class="meta_td rank">2</div><div class="meta_td id" title="jakaria_ahmed (jakaria)"><a target="_blank" href="http://acm.hust.edu.cn/vjudge/user/profile.action?uid=77957">jakaria_ahmed<span style="color:gray">(jakaria)</span></a></div><div class="meta_td solve">2</div><div class="meta_td penalty_td" v0="9:14:50" v1="554">554</div><div class="green standing_time" pid="0" title="2:50:18">2:50:18<br><span>(-1)</span></div><div class="green standing_time" pid="1" title="6:04:32">6:04:32<br>　</div><div class="red standing_time" pid="2">　<br><span>(-2)</span></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div></div><div data-id="77961_93243" class="disp cur_tr" cid="93243" u="dayan"><div class="meta_td rank">3</div><div class="meta_td id" title="dayan"><a target="_blank" href="http://acm.hust.edu.cn/vjudge/user/profile.action?uid=77961">dayan</a></div><div class="meta_td solve">2</div><div class="meta_td penalty_td" v0="11:34:14" v1="694">694</div><div class="green standing_time" pid="0" title="4:24:10">4:24:10<br>　</div><div class="green standing_time" pid="1" title="6:30:04">6:30:04<br><span>(-2)</span></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div></div><div data-id="77956_93243" class="disp cur_tr" cid="93243" u="rahulshuvo"><div class="meta_td rank">4</div><div class="meta_td id" title="rahulshuvo (shuvo)"><a target="_blank" href="http://acm.hust.edu.cn/vjudge/user/profile.action?uid=77956">rahulshuvo<span style="color:gray">(shuvo)</span></a></div><div class="meta_td solve">2</div><div class="meta_td penalty_td" v0="33:23:00" v1="2003">2003</div><div class="green standing_time" pid="0" title="16:28:53">16:28:53<br>　</div><div class="standing_time"></div><div class="solvedfirst standing_time" pid="2" title="16:34:07">16:34:07<br><span>(-1)</span></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="red standing_time" pid="11">　<br><span>(-3)</span></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div></div><div data-id="77958_93243" class="disp cur_tr" cid="93243" u="shanta220"><div class="meta_td rank">5</div><div class="meta_td id" title="shanta220 (shanta)"><a target="_blank" href="http://acm.hust.edu.cn/vjudge/user/profile.action?uid=77958">shanta220<span style="color:gray">(shanta)</span></a></div><div class="meta_td solve">1</div><div class="meta_td penalty_td" v0="3:08:31" v1="188">188</div><div class="green standing_time" pid="0" title="3:08:31">3:08:31<br>　</div><div class="red standing_time" pid="1">　<br><span>(-5)</span></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div></div><div data-id="77967_93243" class="disp cur_tr" cid="93243" u="sanju"><div class="meta_td rank">6</div><div class="meta_td id" title="sanju"><a target="_blank" href="http://acm.hust.edu.cn/vjudge/user/profile.action?uid=77967">sanju</a></div><div class="meta_td solve">1</div><div class="meta_td penalty_td" v0="6:30:39" v1="390">390</div><div class="green standing_time" pid="0" title="6:30:39">6:30:39<br>　</div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div></div><div data-id="77969_93243" class="disp cur_tr" cid="93243" u="Mahii"><div class="meta_td rank">7</div><div class="meta_td id" title="Mahii (Mahi)"><a target="_blank" href="http://acm.hust.edu.cn/vjudge/user/profile.action?uid=77969">Mahii<span style="color:gray">(Mahi)</span></a></div><div class="meta_td solve">1</div><div class="meta_td penalty_td" v0="8:42:16" v1="522">522</div><div class="green standing_time" pid="0" title="8:02:16">8:02:16<br><span>(-2)</span></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div></div><div data-id="77980_93243" class="disp cur_tr" cid="93243" u="rabel"><div class="meta_td rank">8</div><div class="meta_td id" title="rabel (AK47)"><a target="_blank" href="http://acm.hust.edu.cn/vjudge/user/profile.action?uid=77980">rabel<span style="color:gray">(AK47)</span></a></div><div class="meta_td solve">1</div><div class="meta_td penalty_td" v0="15:44:22" v1="944">944</div><div class="green standing_time" pid="0" title="15:44:22">15:44:22<br>　</div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div></div><div data-id="77981_93243" class="disp cur_tr" cid="93243" u="Foysol_ahmed"><div class="meta_td rank">9</div><div class="meta_td id" title="Foysol_ahmed (shuvo)"><a target="_blank" href="http://acm.hust.edu.cn/vjudge/user/profile.action?uid=77981">Foysol_ahmed<span style="color:gray">(shuvo)</span></a></div><div class="meta_td solve">1</div><div class="meta_td penalty_td" v0="19:03:33" v1="1143">1143</div><div class="green standing_time" pid="0" title="19:03:33">19:03:33<br>　</div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="red standing_time" pid="11">　<br><span>(-1)</span></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div></div><div data-id="77992_93243" class="disp cur_tr" cid="93243" u="Muaj_ahmed"><div class="meta_td rank">10</div><div class="meta_td id" title="Muaj_ahmed"><a target="_blank" href="http://acm.hust.edu.cn/vjudge/user/profile.action?uid=77992">Muaj_ahmed</a></div><div class="meta_td solve">1</div><div class="meta_td penalty_td" v0="20:01:01" v1="1201">1201</div><div class="green standing_time" pid="0" title="20:01:01">20:01:01<br>　</div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="red standing_time" pid="11">　<br><span>(-1)</span></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div></div><div data-id="77977_93243" class="disp cur_tr" cid="93243" u="Nihar"><div class="meta_td rank">11</div><div class="meta_td id" title="Nihar (nil)"><a target="_blank" href="http://acm.hust.edu.cn/vjudge/user/profile.action?uid=77977">Nihar<span style="color:gray">(nil)</span></a></div><div class="meta_td solve">0</div><div class="meta_td penalty_td" v0="0:00:00" v1="0">0</div><div class="red standing_time" pid="0">　<br><span>(-1)</span></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div></div><div data-id="38199_93243" class="disp cur_tr my_tr" cid="93243" u="priojeetpriyom"><div class="meta_td rank">12</div><div class="meta_td id" title="priojeetpriyom (priojeet das priyom)"><a target="_blank" href="http://acm.hust.edu.cn/vjudge/user/profile.action?uid=38199">priojeetpriyom<span style="color:gray">(priojeet das priyom)</span></a></div><div class="meta_td solve">0</div><div class="meta_td penalty_td" v0="0:00:00" v1="0">0</div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="red standing_time" pid="6">　<br><span>(-9)</span></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div></div><div id="rank_foot_1" style="width: 1680px; display: block; background-color: transparent;" class="disp" data-id="rank_foot">
+		<div class="rank"></div>
+		<div class="id"></div>
+		<div class="solve"></div>
+		<div class="penalty_td"></div>
+		
+			<div class="standing_time white-font" style="background-color: rgb(0, 0, 0);">　<br><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=93243#status//A/1">10</a>/<a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=93243#status//A/0">14</a><br>71%</div>
+		
+			<div class="standing_time black-font" style="background-color: rgb(178, 178, 178);">　<br><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=93243#status//B/1">3</a>/<a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=93243#status//B/0">13</a><br>23%</div>
+		
+			<div class="standing_time black-font" style="background-color: rgb(229, 229, 229);">　<br><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=93243#status//C/1">1</a>/<a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=93243#status//C/0">4</a><br>25%</div>
+		
+			<div class="standing_time" style="background: transparent;"></div>
+		
+			<div class="standing_time black-font" style="background-color: rgb(255, 255, 255);">　<br><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=93243#status//E/1">0</a>/<a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=93243#status//E/0">1</a><br>0%</div>
+		
+			<div class="standing_time" style="background: transparent;"></div>
+		
+			<div class="standing_time black-font" style="background-color: rgb(255, 255, 255);"><img src="./rails_files/no.png" height="20"><br><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=93243#status//G/1">0</a>/<a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=93243#status//G/0">9</a><br>0%</div>
+		
+			<div class="standing_time" style="background: transparent;"></div>
+		
+			<div class="standing_time" style="background: transparent;"></div>
+		
+			<div class="standing_time" style="background: transparent;"></div>
+		
+			<div class="standing_time" style="background: transparent;"></div>
+		
+			<div class="standing_time black-font" style="background-color: rgb(229, 229, 229);">　<br><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=93243#status//L/1">1</a>/<a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=93243#status//L/0">7</a><br>14%</div>
+		
+			<div class="standing_time" style="background: transparent;"></div>
+		
+			<div class="standing_time" style="background: transparent;"></div>
+		
+			<div class="standing_time" style="background: transparent;"></div>
+		
+		<div class="standing_time" style="background-color:#D3D6FF">　<br>15/48<br>31%</div>
+	</div></div>
+
+	<div id="rank_foot" style="display: none; position: fixed; bottom: 0px; z-index: 100; width: 1680px; background-color: transparent;" class="disp" data-id="rank_foot">
+		<div class="rank"></div>
+		<div class="id"></div>
+		<div class="solve"></div>
+		<div class="penalty_td"></div>
+		
+			<div class="standing_time white-font" style="background-color: rgb(0, 0, 0);">　<br><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=93243#status//A/1">10</a>/<a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=93243#status//A/0">14</a><br>71%</div>
+		
+			<div class="standing_time black-font" style="background-color: rgb(178, 178, 178);">　<br><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=93243#status//B/1">3</a>/<a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=93243#status//B/0">13</a><br>23%</div>
+		
+			<div class="standing_time black-font" style="background-color: rgb(229, 229, 229);">　<br><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=93243#status//C/1">1</a>/<a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=93243#status//C/0">4</a><br>25%</div>
+		
+			<div class="standing_time" style="background: transparent;"></div>
+		
+			<div class="standing_time black-font" style="background-color: rgb(255, 255, 255);">　<br><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=93243#status//E/1">0</a>/<a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=93243#status//E/0">1</a><br>0%</div>
+		
+			<div class="standing_time" style="background: transparent;"></div>
+		
+			<div class="standing_time black-font" style="background-color: rgb(255, 255, 255);"><img src="./rails_files/no.png" height="20"><br><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=93243#status//G/1">0</a>/<a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=93243#status//G/0">9</a><br>0%</div>
+		
+			<div class="standing_time" style="background: transparent;"></div>
+		
+			<div class="standing_time" style="background: transparent;"></div>
+		
+			<div class="standing_time" style="background: transparent;"></div>
+		
+			<div class="standing_time" style="background: transparent;"></div>
+		
+			<div class="standing_time black-font" style="background-color: rgb(229, 229, 229);">　<br><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=93243#status//L/1">1</a>/<a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=93243#status//L/0">7</a><br>14%</div>
+		
+			<div class="standing_time" style="background: transparent;"></div>
+		
+			<div class="standing_time" style="background: transparent;"></div>
+		
+			<div class="standing_time" style="background: transparent;"></div>
+		
+		<div class="standing_time" style="background-color:#D3D6FF">　<br>15/48<br>31%</div>
+	</div>
+
+	<div id="div_rank_tool" style="text-align:right;position:fixed;bottom:80px;right:15px;z-index:999999">
+        <img src="./rails_files/loader.gif" id="calc_rank" height="55" style="visibility: hidden;">
+        <img src="./rails_files/find_me.png" id="img_find_me" title="Find me" height="55" style="visibility:hidden;cursor: pointer">
+		<img src="./rails_files/go_top.png" id="img_go_top" title="Go to top" height="60" style="visibility:hidden;cursor: pointer">
+		<img src="./rails_files/config.png" id="rank_setting" title="Rank config" height="60" style="cursor: pointer">
+	</div>
+	
+	
+	
+</div>
+
+            
+            
+        </div>        
+        
+
+
+  
+
+
+<div style="text-align:center;margin-top:30px;clear:both;font-size:80%">
+	<hr>FAQ | About Virtual Judge | <a href="https://groups.google.com/group/virtual-judge" target="_blank">Forum</a> | <a href="http://acm.hust.edu.cn/vjudge/discuss.action" target="_blank">Discuss</a> | <a href="https://github.com/trcnkq/virtual-judge" target="_blank">Open Source Project</a><br>
+	All Copyright Reserved ©2010-2014 <a href="http://acm.hust.edu.cn/">HUST ACM/ICPC</a> TEAM
+	
+	<br>Anything about the OJ, please ask in the <a href="https://groups.google.com/group/virtual-judge" target="_blank">forum</a>, or contact author:<a href="mailto:is.un@qq.com">Isun</a><br>
+	Server Time: <span class="currentTime">2015-10-01 18:07:11</span>
+</div>
+
+<input id="serverTime" name="serverTime" type="hidden" value="1443701161970">
+
+    <input id="username" name="username" type="hidden" value="priojeetpriyom">
+    <input id="userId" name="userId" type="hidden" value="38199">
+    <input id="sup" name="sup" type="hidden" value="0">
+
+
+    
+
+<div class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front ui-dialog-buttons ui-draggable ui-resizable" tabindex="-1" role="dialog" aria-describedby="dialog-form-submit" style="display: none; position: absolute;" aria-labelledby="ui-id-5"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix ui-draggable-handle"><span id="ui-id-5" class="ui-dialog-title">Submit</span><button type="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only ui-dialog-titlebar-close" role="button" title="Close"><span class="ui-button-icon-primary ui-icon ui-icon-closethick"></span><span class="ui-button-text">Close</span></button></div><div id="dialog-form-submit" style="" class="ui-dialog-content ui-widget-content">
+		<p class="validateTips"></p>
+		<table>
+			<tbody><tr>
+				<td style="text-align:right;padding:5px">Problem:</td>
+				<td><span id="submit_num" style="color:green"></span></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;padding:5px">Language:</td>
+				<td><select id="language" name="language"></select></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;padding:5px">Public:</td>
+				<td><input type="radio" name="isOpen" id="isOpen0" value="0"><label for="isOpen0">No</label>
+<input type="radio" name="isOpen" id="isOpen1" checked="checked" value="1"><label for="isOpen1">Yes</label>
+</td>
+			</tr>
+		</tbody></table>
+		<textarea name="source" class="text ui-widget-content ui-corner-all" style="width:100%;height:360px;background:#F4F4F4;font-family: Courier New,Courier,monospace"></textarea>
+	</div><div class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix"><div class="ui-dialog-buttonset"><button type="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button"><span class="ui-button-text">Submit</span></button><button type="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button"><span class="ui-button-text">Cancel</span></button></div></div><div class="ui-resizable-handle ui-resizable-n" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-sw" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-ne" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90;"></div></div><div class="ui-selectmenu-menu ui-front"><ul aria-hidden="true" aria-labelledby="num-button" id="num-menu" class="ui-menu ui-widget ui-widget-content ui-corner-bottom ui-menu-icons avatar" role="listbox" tabindex="0"></ul></div><div class="ui-selectmenu-menu ui-front"><ul aria-hidden="true" aria-labelledby="res-button" id="res-menu" class="ui-menu ui-widget ui-widget-content ui-corner-bottom ui-menu-icons avatar" role="listbox" tabindex="0"></ul></div><div class="ui-selectmenu-menu ui-front"><ul aria-hidden="true" aria-labelledby="lang-button" id="lang-menu" class="ui-menu ui-widget ui-widget-content ui-corner-bottom ui-menu-icons avatar" role="listbox" tabindex="0"></ul></div><div class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front ui-dialog-buttons ui-draggable ui-resizable" tabindex="-1" role="dialog" aria-describedby="dialog-form-rank-setting" style="display: none; position: absolute;" aria-labelledby="ui-id-6"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix ui-draggable-handle"><span id="ui-id-6" class="ui-dialog-title">Rank Setting</span><button type="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only ui-dialog-titlebar-close" role="button" title="Close"><span class="ui-button-icon-primary ui-icon ui-icon-closethick"></span><span class="ui-button-text">Close</span></button></div><div id="dialog-form-rank-setting" style="" class="ui-dialog-content ui-widget-content"></div><div class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix"><div class="ui-dialog-buttonset"><button type="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button"><span class="ui-button-text">OK</span></button></div></div><div class="ui-resizable-handle ui-resizable-n" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-sw" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-ne" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90;"></div></div></body></html>
