@@ -83,22 +83,22 @@ typedef unsigned long long ull;
 
 
 #define MXQ 100100
-#define MX 100100
+#define MXN 100100
 #define SQRT_MX ((int)sqrt(MX))
 #define double long double
 #define mod 1000000007
 #define mod2 1000000009
 
-
+ll mxn, sqrt_mxn;
 
 struct query{
 	int id, l, r;
 
 	bool operator<(const query &b) const {
-		if(l / SQRT_MX < b.l / SQRT_MX) {
+		if(l / sqrt_mxn < b.l / sqrt_mxn) {
 			return 1;
 		}
-		if(l / SQRT_MX > b.l / SQRT_MX) {
+		if(l / sqrt_mxn > b.l / sqrt_mxn) {
 			return 0;
 		}
 		return r < b.r;
@@ -107,7 +107,7 @@ struct query{
 
 query cur = {-1, -1, -1};
 
-ll ans[MXQ], ara[MX];
+ll ans[MXQ], ara[MXN];
 
 
 void add(ll val) {
@@ -152,24 +152,28 @@ int main() {
     FAST_READ
 
 
-	int n,q;
+	int n,q; //number of array elements, number of queries
 	cin>>n>>q;
 
 	for1(i,n){
         cin>>ara[i];
 	}
 
+    cur = {-1, -1, -1};  //setting range of current l to r
+    mxn=n;
+    sqrt_mxn = sqrt(mxn);
+
 	for1(i, q) {
 		queries[i].id = i;
 		cin>>queries[i].l>>queries[i].r;
 	}
-
 	sort(queries+1, queries+q+1);
 
+//    cout<<"oka"<<endl;
 
-	for1(i, q) {
-		cout<<queries[i].l<<" "<<queries[i].r<<endl;
-	}
+//	for1(i, q) {
+//		cout<<queries[i].l<<" "<<queries[i].r<<endl;
+//	}
 
 	for1(i, q) {
 		mo(queries[i]);
