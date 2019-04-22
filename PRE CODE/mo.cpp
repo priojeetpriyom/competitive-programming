@@ -79,6 +79,7 @@ typedef unsigned long long ull;
 #define log2ceil(n) ( (ll) ceil(log2(n)))
 #define pow2(n) (1<<n)
 
+#define FAST_READ ios_base::sync_with_stdio(0); cin.tie(0);
 
 
 #define MXQ 100100
@@ -148,11 +149,15 @@ void mo(query q) {
 
 
 int main() {
+    FAST_READ
 
 
+	int n,q;
+	cin>>n>>q;
 
-	int q;
-	cin>>q;
+	for1(i,n){
+        cin>>ara[i];
+	}
 
 	for1(i, q) {
 		queries[i].id = i;
@@ -162,9 +167,9 @@ int main() {
 	sort(queries+1, queries+q+1);
 
 
-	//for1(i, q) {
-	//	cout<<queries[i].l<<" "<<queries[i].r<<endl;
-	//}
+	for1(i, q) {
+		cout<<queries[i].l<<" "<<queries[i].r<<endl;
+	}
 
 	for1(i, q) {
 		mo(queries[i]);
